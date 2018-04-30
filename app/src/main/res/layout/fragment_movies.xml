@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.carlosvivas.looking4movies.View.MoviesFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_series"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/CL_options_series"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CL_options_series" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/CL_options_series"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/btn_popular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_white"
+                android:fontFamily="@font/robotobold"
+                android:text="Popular"
+                android:state_focused="true"
+                android:state_pressed="true"
+                android:textColor="@color/secondary_text"
+                app:layout_constraintEnd_toStartOf="@+id/btn_top_rated"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_top_rated"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_white"
+                android:fontFamily="@font/robotobold"
+                android:text="Top Rated"
+                android:textColor="@color/secondary_text"
+                app:layout_constraintEnd_toStartOf="@+id/btn_upcoming"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_popular"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_upcoming"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_white"
+                android:fontFamily="@font/robotobold"
+                android:text="Upcoming"
+                android:textColor="@color/secondary_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_top_rated"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/rv_series"
+        app:layout_constraintStart_toStartOf="@+id/rv_series"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</FrameLayout>
