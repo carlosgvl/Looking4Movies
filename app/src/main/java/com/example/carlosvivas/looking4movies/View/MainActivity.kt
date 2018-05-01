@@ -32,6 +32,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+        supportActionBar!!.setTitle("Movies")
 
 
 
@@ -49,6 +50,13 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
         viewpager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+
+                if(position==0){
+                    toolbar.setTitle("Movies");
+
+                }else{
+                    toolbar.setTitle("TV Series");
+                }
 
             }
 
@@ -71,10 +79,11 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
     private fun setupViewPager(viewPager: ViewPager) {
         val adapter = ViewPagerAdapter(supportFragmentManager)
-        adapter.addFragment(MoviesFragment(), "Películas")
-        adapter.addFragment(SeriesFragment(), "Series")
+        adapter.addFragment(MoviesFragment(), "Movies")
+        adapter.addFragment(SeriesFragment(), "TV Series")
         viewPager.adapter = adapter
     }
+
 
     internal inner class ViewPagerAdapter(manager: FragmentManager) : FragmentPagerAdapter(manager) {
         private val mFragmentList = ArrayList<Fragment>()
@@ -102,10 +111,12 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         when (item.itemId) {
             R.id.navigation_movies -> {
                 viewpager.setCurrentItem(0)
+                toolbar.setTitle("Movies");
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_series -> {
                 viewpager.setCurrentItem(1)
+                toolbar.setTitle("TV Series");
                 return@OnNavigationItemSelectedListener true
             }
 
@@ -130,10 +141,12 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         when (item.itemId) {
             R.id.nav_movies -> {
                 viewpager.setCurrentItem(0)
+                toolbar.setTitle("Movies");
                 // Handle the camera action
             }
             R.id.nav_series -> {
             viewpager.setCurrentItem(1)
+                toolbar.setTitle("TV Series");
 
         }
             R.id.nav_close -> {

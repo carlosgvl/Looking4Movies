@@ -11,7 +11,6 @@ import android.util.Log
 import android.view.*
 import android.widget.Button
 import android.widget.ProgressBar
-import android.widget.Toast
 import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.Response
@@ -26,9 +25,7 @@ import com.example.carlosvivas.looking4movies.Utils.Connectionconstans.API_KEY
 import com.example.carlosvivas.looking4movies.Utils.Connectionconstans.POPULAR
 import com.example.carlosvivas.looking4movies.Utils.Connectionconstans.SERIE
 import com.example.carlosvivas.looking4movies.Utils.Connectionconstans.TOP_RATED
-import com.example.carlosvivas.looking4movies.Utils.Connectionconstans.UPCOMING
 import com.example.carlosvivas.looking4movies.Utils.Connectionconstans.pageNumber
-import kotlinx.android.synthetic.main.fragment_series.view.*
 import org.json.JSONException
 import java.util.ArrayList
 

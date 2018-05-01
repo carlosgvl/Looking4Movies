@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.RecyclerView
 import android.util.Log
-import android.widget.Toast
 import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.Response
@@ -30,7 +29,6 @@ import com.example.carlosvivas.looking4movies.Utils.Connectionconstans.TOP_RATED
 import com.example.carlosvivas.looking4movies.Utils.Connectionconstans.UPCOMING
 
 
-
 /**
  * A simple [Fragment] subclass.
  */
@@ -50,6 +48,8 @@ class MoviesFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val movies_view = inflater.inflate(R.layout.fragment_movies, container, false)
+
+
         setHasOptionsMenu(true)
 
         rv_movies= movies_view.findViewById<RecyclerView>(R.id.rv_series)
@@ -159,6 +159,8 @@ class MoviesFragment : Fragment() {
         val searchItem = menu.findItem(R.id.action_search)
         var searchView = searchItem.actionView as SearchView
         searchView.setQueryHint("Search...")
+
+
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {

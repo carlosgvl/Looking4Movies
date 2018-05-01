@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp"
-    android:clickable="true"
-    android:focusable="true"
-    android:foreground="?android:attr/selectableItemBackground"
-    android:orientation="vertical"
-    app:cardCornerRadius="3dp"
-    app:cardElevation="5dp"
-    app:contentPadding="4dp">
+    android:layout_margin="1dp"
+    android:background="@color/transparent">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="wrap_content"
@@ -19,14 +13,15 @@
 
         <ImageView
             android:id="@+id/iv_movie"
-            android:layout_width="100dp"
-            android:layout_height="150dp" />
+            android:layout_width="130dp"
+            android:layout_height="195dp" />
 
         <TextView
             android:id="@+id/tv_title"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
+            android:layout_width="90dp"
+            android:layout_height="32dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
             android:fontFamily="@font/ralewaybold"
             android:text="Fifty Shades Freed"
             android:textColor="@color/primary_text"
@@ -43,11 +38,21 @@
             android:text="0"
             android:textColor="@color/secondary_text"
             android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="1dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_average"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:srcCompat="@drawable/ic_star_rate" />
 
 
     </android.support.constraint.ConstraintLayout>
 
 
-</android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
