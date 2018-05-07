@@ -1,5 +1,7 @@
 # Looking4Movies (En Desarrollo)
 
+Una aplicación básica de películas y series.
+
 
 <div id="content">
    <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/principal.png" width="180" alt=" " />
@@ -8,9 +10,7 @@
     <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/menu.png" width="180" alt=" " />
 </div>
 
-Una aplicación básica de películas y series.
 
-Una aplicación básica de películas y series.
 - Consume el API de películas y series de www.themoviedb.org
 - Tiene tres categorías de películas y/o series: Popular, Top Rated, Upcoming.
 - Cada película y/o series contiene su detalle.
