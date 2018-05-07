@@ -1,6 +1,6 @@
 # Looking4Movies (En Desarrollo)
 
-![alt text](screenshots/principal.png "Pantalla Principal" =130x195)
+![alt text](screenshots/principal.png  =130x195)
 ![alt text](screenshots/buscador.png "Buscador")
 
 Una aplicación básica de películas y series.
