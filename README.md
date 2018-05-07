@@ -1,6 +1,7 @@
 # Looking4Movies (En Desarrollo)
 
-![alt text](screenshots/principal.png "Pantalla Principal")
+![alt text](screenshots/principal.png "Pantalla Principal")screenshots/buscador.png
+![alt text](screenshots/buscador.png "Buscador")
 
 Una aplicación básica de películas y series.
 
