@@ -1,7 +1,8 @@
 # Looking4Movies (En Desarrollo)
 
-<img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/principal.png" width="48">
-![alt text](screenshots/buscador.png "Buscador")
+<img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/principal.png" width="120">
+<img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/buscador.png" width="120">
+
 
 Una aplicación básica de películas y series.
 
