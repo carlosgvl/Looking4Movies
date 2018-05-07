@@ -6,6 +6,11 @@
   
 </ul>
 
+<div id="content">
+   <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/principal.png" width="120" alt="" />
+   <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/buscador.png" width="120" alt="" />
+</div>
+
 Una aplicación básica de películas y series.
 
 Una aplicación básica de películas y series.
