@@ -1,5 +1,7 @@
 # Looking4Movies (En Desarrollo)
 
+![alt text](screenshots/principal.png "Pantalla Principal")
+
 Una aplicación básica de películas y series.
 
 Una aplicación básica de películas y series.
