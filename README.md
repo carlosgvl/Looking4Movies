@@ -2,10 +2,10 @@
 
 
 <div id="content">
-   <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/principal.png" width="180" alt="" />
-   <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/buscador.png" width="180" alt="" />
-    <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/series.png" width="180" alt="" />
-    <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/menu.png" width="180" alt="" />
+   <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/principal.png" width="180" alt=" " />
+   <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/buscador.png" width="180" alt=" " />
+    <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/series.png" width="180" alt=" " />
+    <img src="https://github.com/carlosgvl/Looking4Movies/blob/master/screenshots/menu.png" width="180" alt=" " />
 </div>
 
 Una aplicación básica de películas y series.
