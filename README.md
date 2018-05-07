@@ -9,7 +9,7 @@ Una aplicacion básica de peliculas y series.
 ##   Idioma / Bibliotecas / Arquitectura utilizada
 
 
-1.Koltin como Idioma - Usado
+1.Kotlin como Idioma - Usado
 
 2.Volley para conexiones http- Implementado
 
@@ -45,7 +45,5 @@ Que cada clase tenga una responsabilidad lógicas a la vez
 ## Authors
 
 * **Carlos Vivas** - 
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 
