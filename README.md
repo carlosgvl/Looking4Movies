@@ -6,6 +6,7 @@ Una aplicación básica de películas y series.
 - Consume el API de películas y series de www.themoviedb.org
 - Tiene tres categorías de películas y/o series: Popular, Top Rated, Upcoming.
 - Cada película y/o series contiene su detalle.
+- Buscador de las películas cargadas.
 
 
 ##   Idioma / Bibliotecas / Arquitectura utilizada
@@ -19,7 +20,7 @@ Una aplicación básica de películas y series.
 
 4.MVC como arquitectura - Seguida
 
-5.SQLite como Base de datos. Para funciones Offline en esta app es mejor usar Realm o Firebase
+5.SQLite como Base de datos. Para funciones Offline en esta app es mejor usar Realm o Firebase (En progreso)
 
 
 ## Capas de la aplicación
@@ -53,6 +54,6 @@ Que cada clase tenga una responsabilidad lógicas a la vez
 
 ## Autor
 
-* **Carlos Vivas** - 
+* **Carlos Vivas** 
 
 
