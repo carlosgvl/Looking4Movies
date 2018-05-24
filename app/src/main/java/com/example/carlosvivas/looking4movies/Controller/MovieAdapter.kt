@@ -33,6 +33,7 @@ import com.bumptech.glide.request.target.Target;
 import java.io.ByteArrayOutputStream
 import com.bumptech.glide.request.target.SimpleTarget
 import com.bumptech.glide.request.transition.Transition
+import java.util.*
 
 
 /**
@@ -59,6 +60,9 @@ class MovieAdapter (var MovieItemList: List<Movie>, val clickListener: (Movie) -
         val stream = ByteArrayOutputStream()
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream)
         return stream.toByteArray()
+
+
+
     }
 
 
